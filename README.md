@@ -81,3 +81,5 @@ To set mapping table, edit the tinyECC_mapping_table.h file. Uncomment the appro
 ### Important Note:
 - Encryption and decryption, being intensive processes, will take significant time when executed on Arduino-based microcontrollers. 
 - Encryption and decryption times will increase with increase in the lengt of plaintext and ciphertext.  
+- Mapping tables occupy space in program memory. The mapping table will occupy 512, 256, or 20 bytes in your program memory based on 256, 128, 10-element mapping tables respectively. 
+- Keep a track of plaintext and ciphertext lengths as these can consume significant space in your RAM. Keep plaintext length within limits. 
