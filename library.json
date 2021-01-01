@@ -1,0 +1,13 @@
+{
+  "name": "tinyECC",
+  "version": "1.0.0",
+  "keywords": "security, cryptography, encryption, decryption, elliptic curve, signature, ecc, ecdsa",
+  "description": "Elliptic Curve Cryptography for Arduino Micro-controllers.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
