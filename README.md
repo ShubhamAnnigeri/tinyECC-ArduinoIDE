@@ -12,41 +12,41 @@ This is a library for implementing Elliptic Curve Cryptography (ECC) and Ellipti
 # How to use Library
 
 Create an object of class tinyECC: 
-
+```
 tinyECC e;    // object e of class tinyECC
-
+```
 ### Encryption
-
+```
 e.plaintext = "Hello World!"; // Assign to plaintext
 
 e.encrypt();                   // Encrypt plaintext and store result in ciphertext
 
 Serial.println(e.ciphertext); // Display ciphertext
-
+```
 ### Decryption
-
+```
 e.ciphertext = "........." ;   // Assign encrypted text to ciphertext
 
 e.decrypt();                   // Decrypt ciphertext and store result in plaintext
 
 Serial.println(e.plaintext); // Display plaintext
-
+```
 ### Signature Generation
-
+```
 e.plaintext = "Hello World!"; // Assign to plaintext
 
 e.genSig();                   // Generate Signature
 
 Serial.println(String(e.Sig[0])+","+String(e.Sig[1])); // Display generated Signature (Signature is a 2-element array)
-
+```
 ### Signature Verificcation
-
+```
 e.plaintext = "Hello World!"; // Assign to plaintext
 
 e.Sig[0] = 67, e.Sig[1] = 27;   // Assign Signature
 
 e.verifySig();                 // Returns true if signature verified, else returns false.    
-
+```
 
 
 # Mapping Tables
@@ -59,7 +59,7 @@ There are three mapping table options:
 How to set mapping table:
 
 To set mapping table, edit the tinyECC_mapping_table.h file. Uncomment the appropriate line to define your mapping table in the tinyECC_mapping_table.h file as shown below:
-
+```
 //Mapping Table for 0-255 ASCII characters. Includes support for special characters. 
 
 #define MAPPING_TABLE_TYPE  MAPPING_TABLE_256
@@ -77,7 +77,7 @@ To set mapping table, edit the tinyECC_mapping_table.h file. Uncomment the appro
 //#define MAPPING_TABLE_TYPE  MAPPING_TABLE_10
 
 //#define MAPPING_TABLE_SIZE  MAPPING_TABLE_10_SIZE
-
+```
 ### Important Note:
 - Encryption and decryption, being intensive processes, will take significant time when executed on Arduino-based microcontrollers. 
 - Encryption and decryption times will increase with increase in the lengt of plaintext and ciphertext.  
