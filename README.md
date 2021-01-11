@@ -1,4 +1,6 @@
 # tinyECC - Elliptic Curve Cryptography for Arduino Micro-controllers.
+[![GitHub release](https://img.shields.io/github/release/ShubhamAnnigeri/tinyECC-ArduinoIDE.svg)](https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE)
+[![license](https://img.shields.io/github/license/ShubhamAnnigeri/tinyECC-ArduinoIDE.svg)](https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE/blob/master/license.txt)
 
 This is a library for implementing Elliptic Curve Cryptography (ECC) and Elliptic Curve Digital Signature Algorithm (ECDSA) on Arduino-based microcontrollers
 
