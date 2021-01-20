@@ -2,7 +2,7 @@
 [![GitHub release](https://img.shields.io/github/release/ShubhamAnnigeri/tinyECC-ArduinoIDE.svg)](https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE)
 [![license](https://img.shields.io/github/license/ShubhamAnnigeri/tinyECC-ArduinoIDE.svg)](https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE/blob/main/license.txt)
 
-This is a library for implementing Elliptic Curve Cryptography (ECC) and Elliptic Curve Digital Signature Algorithm (ECDSA) on Arduino-based microcontrollers
+This is a library for implementing Elliptic Curve Cryptography (ECC) and Elliptic Curve Digital Signature Algorithm (ECDSA) on Arduino-based microcontrollers.
 
 ## Features
 - Elliptic Curve Cryptography for Arduino-based microcontrollers.
@@ -82,6 +82,6 @@ To set mapping table, edit the tinyECC_mapping_table.h file. Uncomment the appro
 ```
 ### Important Note:
 - Encryption and decryption, being intensive processes, will take significant time when executed on Arduino-based microcontrollers. 
-- Encryption and decryption times will increase with increase in the lengt of plaintext and ciphertext.  
-- Mapping tables occupy space in program memory. The mapping table will occupy 512, 256, or 20 bytes in your program memory based on 256, 128, 10-element mapping tables respectively. 
+- Encryption and decryption times will increase with increase in the length of plaintext and ciphertext.  
+- Mapping tables occupy space in program memory. The mapping table will occupy 1024, 512, or 40 bytes in your program memory based on 256, 128, 10-element mapping tables respectively. 
 - Keep a track of plaintext and ciphertext lengths as these can consume significant space in your RAM. Keep plaintext length within limits. 
