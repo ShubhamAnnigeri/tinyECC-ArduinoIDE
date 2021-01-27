@@ -9,5 +9,16 @@
     "url": "https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE"
   },
   "frameworks": "arduino",
-  "platforms": "atmelavr"
+  "platforms": "atmelavr",
+  "authors": 
+  [
+        { 
+            "name": "Shubham Annigeri",
+            "url": "https://github.com/ShubhamAnnigeri"
+        },
+        { 
+            "name": "Sunit Raut",
+            "url": "https://github.com/SunitRaut"
+        }
+  ]
 }
