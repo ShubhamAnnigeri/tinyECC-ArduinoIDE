@@ -9,7 +9,7 @@
     "url": "https://github.com/ShubhamAnnigeri/tinyECC-ArduinoIDE"
   },
   "frameworks": "arduino",
-  "platforms": "atmelavr",
+  "platforms": "atmelavr, espressif8266, espressif32",
   "authors": 
   [
         { 
